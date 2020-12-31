@@ -5,7 +5,8 @@
 	<title>Alex Marin Felices | Data Science</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;500;700&display=swap">
 </head>
 <body>
 	<nav class="header">
@@ -18,39 +19,97 @@
 			<li><a href="./contact.html">Contact</a></li>
 		</ul>
 	</nav>
-	<div class="intro">
-		<div class="intro-text">
-			<h1 class="hide">
-				<span class="text">Data Science</span>
-			</h1>
-			<h1 class="hide">
-				<span class="text">Machine Learning</span>
-			</h1>
-			<h1 class="hide">
-				<span class="text">Data Analysis</span>
-			</h1>
+	<section class="heroes">
+		<div class="intro">
+			<div class="intro-text">
+				<h1 class="hide">
+					<span class="text">Data Science</span>
+				</h1>
+				<h1 class="hide">
+					<span class="text">Machine Learning</span>
+				</h1>
+				<h1 class="hide">
+					<span class="text">Data Analysis</span>
+				</h1>
+			</div>
 		</div>
-	</div>
 
-	<div class="slider"></div>
+		<div class="slider"></div>
 
-	<script 
-		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" 
-		integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" 
-		crossorigin="anonymous">
-	</script>
+		<script 
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" 
+			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" 
+			crossorigin="anonymous">
+		</script>
 
-	<!-- particles.js container -->
-	<div id="particles-js">
-		<h1 class="big-text">Alex Marin Felices</h1>
-		<p class="subtitle">Let the data do the talking</p>
-	</div>
+		<!-- particles.js container -->
+		<div id="particles-js">
+			<h1 class="big-text">Alex Marin Felices</h1>
+			<p class="subtitle">Let the data do the talking</p>
+			<svg class="scroll-icon" x="0px" y="0px" viewBox="0 0 90 112.5" enable-background="new 0 0 90 90" xml:space="preserve"><circle cx="45" cy="13" r="3"/>
+				<path d="M45,0.5c-8.284,0-15,6.717-15,15.002v24.996C30,48.783,36.716,55.5,45,55.5s15-6.717,15-15.002V15.502  C60,7.217,53.284,0.5,45,0.5z M58,40.498C58,47.667,52.168,53.5,45,53.5c-7.168,0-13-5.833-13-13.002V15.502  C32,8.333,37.832,2.5,45,2.5c7.168,0,13,5.833,13,13.002V40.498z"/><path d="M58.293,59.793L45,73.086L31.707,59.793c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l14,14  C44.488,75.402,44.744,75.5,45,75.5s0.512-0.098,0.707-0.293l14-14c0.391-0.391,0.391-1.023,0-1.414S58.684,59.402,58.293,59.793z"/>
+				<path d="M58.293,73.793L45,87.086L31.707,73.793c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l14,14  C44.488,89.402,44.744,89.5,45,89.5s0.512-0.098,0.707-0.293l14-14c0.391-0.391,0.391-1.023,0-1.414S58.684,73.402,58.293,73.793z"/>
+			</svg>
+		</div>
+	</section>
 
 	<!-- scripts -->
 	<script src="js/particles.js"></script>
-	<script src="js/app.js"></script>
+	<script src="js/heroes.js"></script>
 
 
+	<section class="portfolio">
+		<div class="projects">
+
+			<div class="project">
+				<div class="img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+				
+				<a href="https://github.com/alex11marin11/iPhone-Price-Scraping">
+				
+					<div class="icon-text-wrapper">
+						<div class="icon-wrapper">
+							<img src="./images/icons/phone.png">
+						</div>
+						<div class="project-name">
+							iPhone Price Scrapping
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="item-wrapper">
+				<div class="img-background"></div>
+				
+				<a href="https://github.com/alex11marin11/TradingBot">
+
+					<div class="img-text-wrapper">
+						<div class="icon-wrapper">
+							<img src="./images/icons/stocks.png">
+						</div>
+						<div class="subtitle">
+							Trading Bot
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+				
+				<a href="https://github.com/alex11marin11/Website">
+
+					<div class="img-text-wrapper">
+						<div class="icon-wrapper">
+							<img src="./images/icons/website.png">
+						</div>
+						<div class="subtitle">
+							Personal Website
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
 	
 </body>
 </html> 

@@ -1,0 +1,56 @@
+.portfolio {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .project {
+            position: relative;
+
+            .img-background {
+                min-height: 250px;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .icon-text-wrapper {
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+                &:hover .icon-wrapper img{
+                    color: $primaryColor;
+                    visibility: visible;
+                }
+
+                img{
+                    width: 20%;
+                    margin-bottom: 20px;
+                    visibility: hidden;
+                }
+
+                .project-name {
+                    font-weight: 600;
+                    color: transparent;
+                }
+
+                &:hover .project-name {
+                    font-weight: 600;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
+
+.img-darken {
+    transition: 0.5s;
+    filter: brightness(10%);
+}

@@ -11,7 +11,7 @@
 	
 	.intro-text {
 		color: $primaryColor;
-		font-size: 2rem;
+		font-size: 2.5rem;
 		text-align: center;
 
 		.hide {
@@ -39,12 +39,12 @@
 
 canvas {
 	display: block;
-  }
+}
   
   /* ---- particles.js container ---- */
   
 #particles-js {
-	  width: 100vw;
+	width: 100vw;
 	height: 90vh;
 	background-color: $black;
 	background-image: url('');
@@ -57,10 +57,11 @@ canvas {
 		top: 20%;
 		left: 50%;
 		transform: translate(-50%, -20%);
-		font-size: 5rem;
+		font-size: 6rem;
 		color: $primaryColor;
 		font-weight: bold;
 		text-align: center;
+		font-family: $title-font;
 	}
 
 	.subtitle {
@@ -72,6 +73,16 @@ canvas {
 		font-weight: normal;
 		color: $white;
 		text-align: center;
+	}
+
+	.scroll-icon {
+		position: absolute;
+		fill: $primaryColor;
+		max-height: 15vh;
+		width: 5vw;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -100%);
 	}
 }
 
