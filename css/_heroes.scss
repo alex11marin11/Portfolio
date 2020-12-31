@@ -1,0 +1,78 @@
+.intro {
+    background: $black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	
+	.intro-text {
+		color: $primaryColor;
+		font-size: 2rem;
+		text-align: center;
+
+		.hide {
+			background: $black;
+			overflow: hidden;
+
+			span {
+				transform: translateY(100%);
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.slider {
+    background: $primaryColor;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+
+canvas {
+	display: block;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+#particles-js {
+	  width: 100vw;
+	height: 90vh;
+	background-color: $black;
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	.big-text {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%, -20%);
+		font-size: 5rem;
+		color: $primaryColor;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.subtitle {
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -70%);
+		font-size: 1.5rem;
+		font-weight: normal;
+		color: $white;
+		text-align: center;
+	}
+}
+
+
