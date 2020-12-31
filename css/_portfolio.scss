@@ -9,12 +9,13 @@
             .img-background {
                 min-height: 250px;
                 width: 100%;
+                background: url("images/abt_bckgrnd");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
             }
 
-            .icon-text-wrapper {
+            .title-description {
                 position: absolute;
                 top: 0;
                 display: flex;
@@ -25,23 +26,21 @@
                 width: 100%;
                 text-align: center;
 
-                &:hover .icon-wrapper img{
-                    color: $primaryColor;
-                    visibility: visible;
-                }
-
-                img{
-                    width: 20%;
-                    margin-bottom: 20px;
-                    visibility: hidden;
-                }
-
-                .project-name {
+                .project-title {
                     font-weight: 600;
                     color: transparent;
                 }
 
-                &:hover .project-name {
+                &:hover .project-title {
+                    font-weight: 600;
+                    color: $primaryColor;
+                }
+                .project-description {
+                    font-weight: 600;
+                    color: transparent;
+                }
+
+                &:hover .project-description {
                     font-weight: 600;
                     color: $primaryColor;
                 }

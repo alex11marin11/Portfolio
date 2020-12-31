@@ -1,4 +1,8 @@
-nav {
+header {
+  background: #050505;
+}
+
+header nav {
   padding: 0rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,10 +14,10 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   height: 10vh;
-  background-color: #121212;
+  background-color: #020202;
 }
 
-nav .nav-links {
+header nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,13 +31,13 @@ nav .nav-links {
   display: none;
 }
 
-nav .nav-links li {
+header nav .nav-links li {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 0 0.3rem;
 }
 
-nav .nav-links li a {
+header nav .nav-links li a {
   border-bottom: 2px solid transparent;
   -webkit-transition: border-bottom 0.5s;
   transition: border-bottom 0.5s;
@@ -42,20 +46,20 @@ nav .nav-links li a {
   color: #daeeed;
 }
 
-nav .nav-links li a:hover {
-  border-bottom: 2px solid #ffffff;
-  color: #ffffff;
+header nav .nav-links li a:hover {
+  border-bottom: 2px solid #00FFF2;
+  color: #00FFF2;
 }
 
-nav .nav-links #active-nav-link {
-  border-bottom: 2px solid #ffffff;
+header nav .nav-links #active-nav-link {
+  border-bottom: 2px solid #00FFF2;
   color: #daeeed !important;
 }
 
-nav .logo a {
+header nav .logo a {
   font-weight: medium;
   font-size: 2rem;
-  color: #ffffff;
+  color: #00FFF2;
   text-decoration: none;
   font-family: "Lobster", cursive;
 }
@@ -76,10 +80,12 @@ nav .logo a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .intro .intro-text {
-  color: #ffffff;
+  color: #00FFF2;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -96,7 +102,7 @@ nav .logo a {
 }
 
 .slider {
-  background: #ffffff;
+  background: #00FFF2;
   position: fixed;
   top: 0;
   left: 0;
@@ -104,6 +110,8 @@ nav .logo a {
   height: 100%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  overflow: hidden;
+  z-index: 1;
 }
 
 canvas {
@@ -112,6 +120,7 @@ canvas {
 
 /* ---- particles.js container ---- */
 #particles-js {
+  position: relative;
   width: 100vw;
   height: 90vh;
   background-color: #050505;
@@ -119,16 +128,26 @@ canvas {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 0;
 }
 
 #particles-js .big-text {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-          transform: translate(-50%, -20%);
-  font-size: 6rem;
-  color: #ffffff;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+  font-size: 12vh;
+  color: #00FFF2;
   font-weight: bold;
   text-align: center;
   font-family: "Lobster", cursive;
@@ -136,11 +155,11 @@ canvas {
 
 #particles-js .subtitle {
   position: absolute;
-  top: 70%;
+  top: 67%;
   left: 50%;
-  -webkit-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
-  font-size: 1.5rem;
+  -webkit-transform: translate(-50%, -67%);
+          transform: translate(-50%, -67%);
+  font-size: 2.5vh;
   font-weight: normal;
   color: #daeeed;
   text-align: center;
@@ -148,9 +167,9 @@ canvas {
 
 #particles-js .scroll-icon {
   position: absolute;
-  fill: #ffffff;
-  max-height: 15vh;
-  width: 5vw;
+  fill: #00FFF2;
+  height: 20vh;
+  width: 15vw;
   top: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, -100%);
@@ -161,7 +180,6 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background: #050505;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;

@@ -9,16 +9,21 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;500;700&display=swap">
 </head>
 <body>
-	<nav class="header">
-		<div class="logo">
-			<h4><a href="./index.html">AMF</a></h4>
-		</div>
-		<ul class="nav-links">
-			<li><a href="./portfolio.html">Portfolio</a></li>
-			<li><a href="./about.html">About</a></li>
-			<li><a href="./contact.html">Contact</a></li>
-		</ul>
-	</nav>
+	<!-- Navigation bar-->
+	<header>
+		<nav>
+			<div class="logo">
+				<h4><a href="./index.html">AMF</a></h4>
+			</div>
+			<ul class="nav-links">
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Heroes section -->
 	<section class="heroes">
 		<div class="intro">
 			<div class="intro-text">
@@ -57,54 +62,42 @@
 	<script src="js/particles.js"></script>
 	<script src="js/heroes.js"></script>
 
-
+	<!-- Portfolio section -->
 	<section class="portfolio">
 		<div class="projects">
 
 			<div class="project">
-				<div class="img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+				<div class="img-background"></div>
 				
 				<a href="https://github.com/alex11marin11/iPhone-Price-Scraping">
 				
-					<div class="icon-text-wrapper">
-						<div class="icon-wrapper">
-							<img src="./images/icons/phone.png">
-						</div>
-						<div class="project-name">
-							iPhone Price Scrapping
-						</div>
+					<div class="title-description">
+						<h6 class="project-title">iPhone Price Scrapping</h6>
+						<p class="project-description">Lorem ipsum</p>
 					</div>
 				</a>
 			</div>
 
-			<div class="item-wrapper">
+			<div class="project">
 				<div class="img-background"></div>
 				
 				<a href="https://github.com/alex11marin11/TradingBot">
-
-					<div class="img-text-wrapper">
-						<div class="icon-wrapper">
-							<img src="./images/icons/stocks.png">
-						</div>
-						<div class="subtitle">
-							Trading Bot
-						</div>
+				
+					<div class="title-description">
+						<h6 class="project-title">Trading Bot</h6>
+						<p class="project-description">Lorem ipsum</p>
 					</div>
 				</a>
 			</div>
 
-			<div class="portfolio-item-wrapper">
-				<div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+			<div class="project">
+				<div class="img-background"></div>
 				
 				<a href="https://github.com/alex11marin11/Website">
-
-					<div class="img-text-wrapper">
-						<div class="icon-wrapper">
-							<img src="./images/icons/website.png">
-						</div>
-						<div class="subtitle">
-							Personal Website
-						</div>
+				
+					<div class="title-description">
+						<h6 class="project-title">Portfolio Website</h6>
+						<p class="project-description">Lorem ipsum</p>
 					</div>
 				</a>
 			</div>
