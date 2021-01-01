@@ -14,7 +14,7 @@ header nav {
       -ms-flex-pack: center;
           justify-content: center;
   height: 10vh;
-  background-color: #020202;
+  background-color: black;
 }
 
 header nav .nav-links {
@@ -58,7 +58,7 @@ header nav .nav-links #active-nav-link {
 
 header nav .logo a {
   font-weight: medium;
-  font-size: 2rem;
+  font-size: 5vh;
   color: #00FFF2;
   text-decoration: none;
   font-family: "Lobster", cursive;
@@ -86,8 +86,9 @@ header nav .logo a {
 
 .intro .intro-text {
   color: #00FFF2;
-  font-size: 2.5rem;
+  font-size: 5vh;
   text-align: center;
+  margin: 2rem 5rem;
 }
 
 .intro .intro-text .hide {
@@ -155,10 +156,10 @@ canvas {
 
 #particles-js .subtitle {
   position: absolute;
-  top: 67%;
+  top: 70%;
   left: 50%;
-  -webkit-transform: translate(-50%, -67%);
-          transform: translate(-50%, -67%);
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
   font-size: 2.5vh;
   font-weight: normal;
   color: #daeeed;
@@ -168,15 +169,104 @@ canvas {
 #particles-js .scroll-icon {
   position: absolute;
   fill: #00FFF2;
-  height: 20vh;
-  width: 15vw;
-  top: 100%;
+  height: 15vh;
+  width: 10vh;
   left: 50%;
-  -webkit-transform: translate(-50%, -100%);
-          transform: translate(-50%, -100%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0vh;
+  cursor: pointer;
 }
 
+/*@media screen and (max-width: 240px) {
+	.intro {
+		
+		.intro-text {
+			color: $primaryColor;
+			font-size: 5vh;
+			text-align: center;
+			margin: 2rem 5rem;
+	
+			.hide {
+				background: $black;
+				overflow: hidden;
+	
+				span {
+					transform: translateY(100%);
+					display: inline-block;
+				}
+			}
+		}
+	}
+	
+	.slider {
+		background: $primaryColor;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: translateY(100%);
+		overflow: hidden;
+		z-index: 1;
+	}
+	
+	canvas {
+		display: block;
+	}
+	  
+	  
+	#particles-js {
+		position: relative;
+		width: 100vw;
+		height: 90vh;
+		background-color: $black;
+		background-image: url('');
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 0;
+	
+		.big-text {
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			transform: translate(-50%, -10%);
+			font-size: 12vh;
+			color: $primaryColor;
+			font-weight: bold;
+			text-align: center;
+			font-family: $title-font;
+		}
+	
+		.subtitle {
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			transform: translate(-50%, -70%);
+			font-size: 2.5vh;
+			font-weight: normal;
+			color: $white;
+			text-align: center;
+		}
+	
+		.scroll-icon {
+			position: absolute;
+			fill: $primaryColor;
+			height: 15vh;
+			width: 10vh;
+			left: 50%;
+			transform: translateX(-50%);;
+			bottom: 0vh;
+			cursor: pointer;
+		}
+	}
+}*/
 html, body {
+  font-size: 100%;
   width: 100%;
   height: 100%;
   overflow-x: hidden;

@@ -7,7 +7,7 @@ header {
 		align-items: center;
 		justify-content: center;
 		height: 10vh;
-		background-color: #020202;
+		background-color: $total-black;
 	
 			.nav-links {
 				display: flex;
@@ -43,7 +43,7 @@ header {
 	
 		.logo a {
 			font-weight: medium;
-			font-size: 2rem;
+			font-size: 5vh;
 			color: $primaryColor;
 			text-decoration: none;
 			font-family: $title-font;
