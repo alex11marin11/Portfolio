@@ -143,10 +143,10 @@ canvas {
 
 #particles-js .big-text {
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 50%;
-  -webkit-transform: translate(-50%, -10%);
-          transform: translate(-50%, -10%);
+  -webkit-transform: translate(-50%, -8%);
+          transform: translate(-50%, -8%);
   font-size: 12vh;
   color: #00FFF2;
   font-weight: bold;
@@ -156,10 +156,10 @@ canvas {
 
 #particles-js .subtitle {
   position: absolute;
-  top: 70%;
+  top: 67%;
   left: 50%;
-  -webkit-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
+  -webkit-transform: translate(-50%, -67%);
+          transform: translate(-50%, -67%);
   font-size: 2.5vh;
   font-weight: normal;
   color: #daeeed;
@@ -174,7 +174,7 @@ canvas {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 0vh;
+  bottom: 3vh;
   cursor: pointer;
 }
 
