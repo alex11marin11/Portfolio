@@ -1,4 +1,5 @@
-const tl = gsap.timeline({defaults: {ease: "power2.out"}});
+// Intro, heroes, nav-bar animations
+/*const tl = gsap.timeline({defaults: {ease: "power2.out"}});
 
 tl.to(".text", {y: "0%", duration: 1, stagger: 0.5});
 tl.to(".slider", {y:"-100%", duration: 1.5, delay: 0.25});
@@ -6,10 +7,26 @@ tl.to(".intro", {y: "-100%", duration: 1}, "-=1.5");
 tl.fromTo("nav", {opacity: 0}, {opacity: 1, duration: 1});
 tl.fromTo(".big-text", {opacity: 0, y: "50%"}, {opacity: 1, y: "-20%", duration: 1}, "-=1.5");
 tl.fromTo(".subtitle", {opacity: 0, y: "80%"}, {opacity: 1, y: "-60%", duration: 1}, "-=1");
-tl.fromTo(".scroll-icon", {opacity: 0}, {opacity: 1, duration: 1}, "-=0.5");
+tl.fromTo(".scroll-icon", {opacity: 0}, {opacity: 1, duration: 1}, "-=0.5");*/
 
 
-particlesJS('particles-js',
+// Portfolio images animation
+/*const portfolioItems = document.querySelectorAll('.title-description');
+
+portfolioItems.forEach(portfolioItem => {
+
+  portfolioItem.addEventListener('mouseover', () => {
+    portfolioItem.classList.add('img-darken');
+  })
+
+  portfolioItem.addEventListener('mouseout', () => {
+    portfolioItem.classList.remove('img-darken');
+  })
+})*/
+
+
+// Patricles code for the heroes section
+/*particlesJS('particles-js',
   
   {
     "particles": {
@@ -127,4 +144,4 @@ particlesJS('particles-js',
       "background_size": "cover"
     }
   }
-);
+);*/

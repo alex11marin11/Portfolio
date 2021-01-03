@@ -1,50 +1,55 @@
-.portfolio {
+#portfolio {
+
     .projects {
+        padding: 2rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
         .project {
-            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
-            .img-background {
-                min-height: 250px;
-                width: 100%;
-                background: url("images/abt_bckgrnd");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
 
-            .title-description {
-                position: absolute;
-                top: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+            .project-element {
                 height: 100%;
                 width: 100%;
-                text-align: center;
 
-                .project-title {
-                    font-weight: 600;
-                    color: transparent;
+                .title-description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    height: 100%;
+                    width: 100%;
+
+    
+                    .project-title {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        color: transparent;
+                    }
+    
+                    &:hover .project-title {
+                        font-weight: 600;
+                        color: $primaryColor;
+                    }
+                    .project-description {
+                        font-size: .8rem;
+                        color: transparent;
+                    }
+    
+                    &:hover .project-description {
+                        font-weight: 600;
+                        color: $primaryColor;
+                    }
                 }
 
-                &:hover .project-title {
-                    font-weight: 600;
-                    color: $primaryColor;
-                }
-                .project-description {
-                    font-weight: 600;
-                    color: transparent;
-                }
-
-                &:hover .project-description {
-                    font-weight: 600;
-                    color: $primaryColor;
-                }
             }
+
+
         }
     }
 }
