@@ -11,9 +11,9 @@ tl.fromTo(".scroll-icon", {opacity: 0}, {opacity: 1, duration: 1}, "-=0.5");*/
 
 
 // Portfolio images animation
-/*const portfolioItems = document.querySelectorAll('.title-description');
-
+const portfolioItems = document.querySelectorAll('.bg-image');
 portfolioItems.forEach(portfolioItem => {
+  console.log(portfolioItem.classList)
 
   portfolioItem.addEventListener('mouseover', () => {
     portfolioItem.classList.add('img-darken');
@@ -22,7 +22,7 @@ portfolioItems.forEach(portfolioItem => {
   portfolioItem.addEventListener('mouseout', () => {
     portfolioItem.classList.remove('img-darken');
   })
-})*/
+})
 
 
 // Patricles code for the heroes section
