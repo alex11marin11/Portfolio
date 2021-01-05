@@ -40,7 +40,8 @@
     
                     &:hover .project-title {
                         font-weight: 600;
-                        color: $primaryColor;
+                        color: $black;
+                        transition: 1s ease-in-out;
                     }
     
                     .project-description {
@@ -59,6 +60,10 @@
 }
 
 .img-darken {
-    transition: 0.5s;
-    filter: brightness(10%);
+    transition: all ease 0.5s;
+    //filter: brightness(10%);
+    //background: rgba(0, 0, 0, 0.7);
+    opacity: 0.5;
+    
+    background-color: rgba(0, 255, 242, 0.2);
 }

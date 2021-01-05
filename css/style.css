@@ -343,7 +343,9 @@ canvas {
 
 #portfolio .projects .project .project-element .title-description:hover .project-title {
   font-weight: 600;
-  color: #00FFF2;
+  color: #050505;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 #portfolio .projects .project .project-element .title-description .project-description {
@@ -357,10 +359,10 @@ canvas {
 }
 
 .img-darken {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-filter: brightness(10%);
-          filter: brightness(10%);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0.5;
+  background-color: rgba(0, 255, 242, 0.2);
 }
 
 html, body {
