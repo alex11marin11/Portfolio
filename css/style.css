@@ -1,27 +1,3 @@
-.one {
-  background: url(../images/portfolio1.jpg);
-}
-
-.two {
-  background: url(../images/portfolio2.jpg);
-}
-
-.three {
-  background: url(../images/portfolio3.jpg);
-}
-
-.four {
-  background: url(../images/portfolio4.jpg);
-}
-
-.five {
-  background: url(../images/portfolio5.jpg);
-}
-
-.six {
-  background: url(../images/portfolio6.jpg);
-}
-
 header {
   background: #050505;
 }
@@ -84,7 +60,7 @@ header nav .logo a {
   font-size: 5vh;
   color: #00FFF2;
   text-decoration: none;
-  font-family: "Lobster", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 .intro {
@@ -109,7 +85,7 @@ header nav .logo a {
 
 .intro .intro-text {
   color: #00FFF2;
-  font-size: 5vw;
+  font-size: 2.5rem;
   text-align: center;
   margin: 2rem 5rem;
 }
@@ -170,11 +146,12 @@ canvas {
   left: 50%;
   -webkit-transform: translate(-50%, -8%);
           transform: translate(-50%, -8%);
-  font-size: 12vw;
+  font-size: 10vh;
   color: #00FFF2;
   font-weight: bold;
   text-align: center;
-  font-family: "Lobster", cursive;
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
 }
 
 #particles-js .subtitle {
@@ -298,23 +275,31 @@ canvas {
 }
 
 #portfolio .projects .project {
-  height: 30vh;
-}
-
-#portfolio .projects .project .bg-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 33vh;
+  position: relative;
 }
 
 #portfolio .projects .project .project-element {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
 }
 
+#portfolio .projects .project .project-element .bg-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 #portfolio .projects .project .project-element .title-description {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,8 +316,6 @@ canvas {
   text-align: center;
   height: 100%;
   width: 100%;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
 }
 
 #portfolio .projects .project .project-element .title-description .project-title {
@@ -343,9 +326,9 @@ canvas {
 
 #portfolio .projects .project .project-element .title-description:hover .project-title {
   font-weight: 600;
-  color: #050505;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  color: #00FFF2;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #portfolio .projects .project .project-element .title-description .project-description {
@@ -358,11 +341,11 @@ canvas {
   color: #00FFF2;
 }
 
-.img-darken {
+.img-darken img {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
-  opacity: 0.5;
-  background-color: rgba(0, 255, 242, 0.2);
+  -webkit-filter: brightness(10%);
+          filter: brightness(10%);
 }
 
 html, body {
@@ -379,5 +362,18 @@ html, body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 8vh;
+  color: #050505;
+  text-align: center;
+  border-bottom: solid 10px #747474;
 }
 /*# sourceMappingURL=style.css.map */

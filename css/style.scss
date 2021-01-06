@@ -1,5 +1,4 @@
 @import "./variables";
-@import	"./images";
 @import "./nav-bar";
 @import "./heroes";
 @import "./portfolio";
@@ -21,5 +20,18 @@ html, body {
 
 a {
 	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.section-title {
+	font-family: $title-font;
+	font-weight: bold;
+	font-size: 8vh;
+	color: $black;
+	text-align: center;
+	border-bottom: solid 10px $bright-grey;
 }
 
