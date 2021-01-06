@@ -13,8 +13,7 @@
 	
 	.intro-text {
 		color: $primaryColor;
-		font-size: 5vw;
-		//font-size: 5vh;
+		font-size: 2.5rem;
 		text-align: center;
 		margin: 2rem 5rem;
 
@@ -67,12 +66,12 @@ canvas {
 		top: 8%;
 		left: 50%;
 		transform: translate(-50%, -8%);
-		font-size: 12vw;
-		//font-size: 12vh;
+		font-size: 10vh;
 		color: $primaryColor;
 		font-weight: bold;
 		text-align: center;
 		font-family: $title-font;
+		padding: 2rem;
 	}
 
 	.subtitle {
