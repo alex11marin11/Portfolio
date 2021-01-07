@@ -4,16 +4,28 @@ const tl = gsap.timeline({defaults: {ease: "power2.out"}});
 tl.to(".text", {y: "0%", duration: 1, stagger: 0.5});
 tl.to(".slider", {y:"-100%", duration: 1.5, delay: 0.25});
 tl.to(".intro", {y: "-100%", duration: 1}, "-=1.5");
-tl.fromTo("nav", {opacity: 0}, {opacity: 1, duration: 1});
+tl.fromTo("header", {opacity: 0}, {opacity: 1, duration: 1}, "-=0.5");
+tl.fromTo("nav", {opacity: 0}, {opacity: 1, duration: 1}, "-=0.25");
 tl.fromTo(".big-text", {opacity: 0, y: "50%"}, {opacity: 1, y: "-20%", duration: 1}, "-=1.5");
 tl.fromTo(".subtitle", {opacity: 0, y: "80%"}, {opacity: 1, y: "-60%", duration: 1}, "-=1");
 tl.fromTo(".scroll-icon", {opacity: 0}, {opacity: 1, duration: 1}, "-=0.5");
 
+// When the user scrolls down, hide the header. When the user scrolls up, show the navbar
+/*var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    console.log(document.getElementsByTagName("header"));
+    document.getElementsByTagName("header").style.top = "0";
+  } else {
+    document.getElementsByTagName("header").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}*/
 
 // Portfolio images animation
 const portfolioItems = document.querySelectorAll('.project-element');
 portfolioItems.forEach(portfolioItem => {
-  console.log(portfolioItem.classList)
 
   portfolioItem.addEventListener('mouseover', () => {
     portfolioItem.classList.add('img-darken');
