@@ -1,18 +1,26 @@
 header {
-  background: #050505;
+  background: black;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  display: block;
 }
 
 header nav {
-  padding: 0rem 2rem;
+  padding: 0rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 10vh;
   background-color: black;
 }
@@ -31,9 +39,8 @@ header nav .nav-links {
 }
 
 header nav .nav-links li {
-  font-size: 1rem;
-  text-transform: uppercase;
-  padding: 0 0.3rem;
+  font-size: 3vh;
+  padding: 0 0 0 3rem;
 }
 
 header nav .nav-links li a {
@@ -42,7 +49,7 @@ header nav .nav-links li a {
   transition: border-bottom 0.5s;
   text-decoration: none;
   font-weight: lighter;
-  color: #daeeed;
+  color: #FFFFFF;
 }
 
 header nav .nav-links li a:hover {
@@ -52,7 +59,7 @@ header nav .nav-links li a:hover {
 
 header nav .nav-links #active-nav-link {
   border-bottom: 2px solid #00FFF2;
-  color: #daeeed !important;
+  color: #FFFFFF !important;
 }
 
 header nav .logo a {
@@ -63,8 +70,14 @@ header nav .logo a {
   font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+  header nav .nav-links {
+    display: none;
+  }
+}
+
 .intro {
-  background: #050505;
+  background: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -91,7 +104,7 @@ header nav .logo a {
 }
 
 .intro .intro-text .hide {
-  background: #050505;
+  background: black;
   overflow: hidden;
 }
 
@@ -122,9 +135,8 @@ canvas {
 #particles-js {
   position: relative;
   width: 100vw;
-  height: 90vh;
-  background-color: #050505;
-  background-image: url("");
+  height: 100vh;
+  background-color: black;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -162,7 +174,7 @@ canvas {
           transform: translate(-50%, -67%);
   font-size: 2.5vh;
   font-weight: normal;
-  color: #daeeed;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -265,6 +277,17 @@ canvas {
 		}
 	}
 }*/
+#portfolio {
+  background-color: #FFFFFF;
+}
+
+#portfolio #portfolio-title {
+  color: black;
+  border-top: 10px solid #747474;
+  border-bottom: 10px solid #747474;
+  background-color: #FFFFFF;
+}
+
 #portfolio .projects {
   padding: 1.5rem;
   display: -ms-grid;
@@ -272,6 +295,7 @@ canvas {
   grid-gap: 1.5rem;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 10vh;
 }
 
 #portfolio .projects .project {
@@ -348,6 +372,54 @@ canvas {
           filter: brightness(10%);
 }
 
+.about {
+  height: 100vh;
+  background: url(../images/bg-b.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about #about-title {
+  color: #FFFFFF;
+  border-top: 10px solid #747474;
+  border-bottom: 10px solid #747474;
+  background-color: black;
+}
+
+/* Desktop - 8 */
+/*position: relative;
+width: 1920px;
+height: 1080px;
+
+background: rgba(255, 255, 255, 0.05);*/
+/* Rectangle 1 */
+/*position: absolute;
+width: 1920px;
+height: 1080px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;*/
+/* Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis Data Science Machine Learning Data Analysis */
+/*position: absolute;
+width: 2544.56px;
+height: 2060px;
+left: -461px;
+top: 194.56px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 100px;
+line-height: 103px;*/
+/* or 103% */
+/*display: flex;
+align-items: center;
+letter-spacing: 0.065em;
+
+color: rgba(0, 0, 0, 0.08);
+
+transform: rotate(-28.98deg);*/
 html, body {
   font-size: 100%;
   width: 100%;
@@ -369,10 +441,13 @@ ul {
 }
 
 .section-title {
+  display: inline-block;
+  margin-top: 10vh;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 8vh;
-  color: #050505;
+  color: black;
   text-align: center;
   border-bottom: solid 10px #747474;
 }

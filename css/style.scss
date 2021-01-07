@@ -2,8 +2,8 @@
 @import "./nav-bar";
 @import "./heroes";
 @import "./portfolio";
+@import "./about";
 
-//@import "./about";
 //@import "./contact";
 
 html, body {
@@ -27,6 +27,9 @@ ul {
 }
 
 .section-title {
+	display: inline-block;
+	margin-top: 10vh;
+	width: 100%;
 	font-family: $title-font;
 	font-weight: bold;
 	font-size: 8vh;
